@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EtchSketch</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <center>
+        <h1>Click on etch-sketch to draw and again to stop</h1>
+        <div class="btn-container">
+            <button id="btn" data-size="2">2*2</button>
+            <button id="btn" data-size="4">4*4</button>
+            <button id="btn" class="selected" data-size="8">8*8</button>
+            <button id="btn" data-size="16">16*16</button>
+            <button id="btn" data-size="32">32*32</button>
+            <button id="btn" data-size="64">64*64</button>
+            <button id="btn" data-size="100">100*100</button>
+        </div>
+
+        <div class="etch-container">
+            <div class="colors">
+                <button data-color="black" class="black slctClr"></button>
+                <button data-color="blue" class="blue"></button>
+                <button data-color="red" class="red"></button>
+                <button data-color="green" class="green"></button>
+                <button data-color="yellow" class="yellow"></button>
+                <button data-color="random" class="random"></button>
+            </div>
+            <div id="gridContainer" class="grid-container"></div>
+        </div>
+    </center>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
